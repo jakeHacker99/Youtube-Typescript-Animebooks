@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import HomePage from "./app/container/HomePage";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -9,7 +10,12 @@ const AppContainer = styled.div`
 `;
 
 function App() {
-  return <AppContainer className="App">Anime Books </AppContainer>;
+  return (
+    <AppContainer className="App">
+      Anime Books
+      <HomePage />
+    </AppContainer>
+  );
 }
 
 export default App;
