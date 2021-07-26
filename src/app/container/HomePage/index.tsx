@@ -5,6 +5,7 @@ import { useAppDispatch } from "../../hooks";
 import animeService from "../../services/animeService";
 import { GetAnimePage } from "../../services/animeService/__generated__/GetAnimePage";
 import { setAnimePage } from "./homePageSlice";
+import { HotAnime } from "./hotAnime";
 
 interface HomepageProps {}
 
@@ -39,6 +40,7 @@ const HomePage = (props: HomepageProps) => {
   return (
     <Container>
       <h1>Hot Anime</h1>
+      <HotAnime />
     </Container>
   );
 };
