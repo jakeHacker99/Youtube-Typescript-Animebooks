@@ -12,7 +12,6 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer className="App">
-      Anime Books
       <HomePage />
     </AppContainer>
   );
