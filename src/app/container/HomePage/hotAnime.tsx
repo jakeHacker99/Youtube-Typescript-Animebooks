@@ -47,7 +47,7 @@ export const HotAnime = () => {
   const isEmptyAnimepage =
     !animePage || !animePage.media || animePage.media.length === 0;
 
-  if (isEmptyAnimepage) return null;
+  if (isEmptyAnimepage) return <div>loading ... </div>;
   return (
     <HotAnimeContainer>
       <AnimeItemContainer>
@@ -57,6 +57,9 @@ export const HotAnime = () => {
             <AnimeItemContainer key={anime?.id}>
               <AnimeCover>
                 <img src={anime?.coverImage?.extraLarge || ""} alt="" />
+                <h5 style={{ justifyContent: "center", textAlign: "center" }}>
+                  Average Score: {anime?.averageScore}
+                </h5>
               </AnimeCover>
               <AnimeTitle>{anime?.title?.english}</AnimeTitle>
             </AnimeItemContainer>

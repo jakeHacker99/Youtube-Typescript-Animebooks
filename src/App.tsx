@@ -7,11 +7,12 @@ const AppContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  flex-direction: row;
 `;
 
 function App() {
   return (
-    <AppContainer className="App">
+    <AppContainer>
       <HomePage />
     </AppContainer>
   );
